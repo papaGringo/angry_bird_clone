@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PullAndRelease : MonoBehaviour 
 {
+	[Range(400f,1300f)]
 	public float force = 800;
 	Vector2 startPos;
 	Rigidbody2D rb;
