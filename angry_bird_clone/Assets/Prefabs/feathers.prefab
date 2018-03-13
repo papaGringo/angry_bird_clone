@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4050649707057668}
   - component: {fileID: 198338325797042228}
+  - component: {fileID: 114222020895720250}
   - component: {fileID: 199750861921552204}
   m_Layer: 0
   m_Name: feathers
@@ -41,6 +42,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114222020895720250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1449969810515074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef230f082863cc844b309ea08a709e0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLife: 5
 --- !u!198 &198338325797042228
 ParticleSystem:
   m_ObjectHideFlags: 1
