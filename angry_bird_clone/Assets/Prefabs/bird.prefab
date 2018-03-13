@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 58513119032771234}
   - component: {fileID: 50995923923391364}
   - component: {fileID: 114361416732311266}
+  - component: {fileID: 114465993544827346}
+  - component: {fileID: 114692220615180916}
   m_Layer: 0
   m_Name: bird
   m_TagString: Untagged
@@ -90,6 +92,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 1300
+--- !u!114 &114465993544827346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1171885638860818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e122abacffa27042bbfea8e0fbac2ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effect: {fileID: 1449969810515074, guid: 439c5c2a6ec07d74e994601b237a8e6f, type: 2}
+--- !u!114 &114692220615180916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1171885638860818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b30acda6e27f0429ee67f0e03ef356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trails:
+  - {fileID: 1493696639367078, guid: 63eaad6ae60fdcb4d9173e9019735173, type: 2}
+  - {fileID: 1806469345622960, guid: 25c7d4e3a554c2b48a4b62b857b8f8ea, type: 2}
+  - {fileID: 1587362712004408, guid: dce902132aea4e743973f0fe5fe30306, type: 2}
 --- !u!212 &212755032200419440
 SpriteRenderer:
   m_ObjectHideFlags: 1

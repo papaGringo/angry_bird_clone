@@ -10,17 +10,17 @@ public class PullAndRelease : MonoBehaviour
 	void Start () 
 	{
 		rb = GetComponent<Rigidbody2D>();
+		GetComponent<Trails>().enabled = false;
 		startPos = transform.position;
-	}
+	}	
 	void OnMouseUp()
 	{
 		//fire bird
 		rb.bodyType = RigidbodyType2D.Dynamic;
 
 		Vector2 dir = startPos - (Vector2)transform.position;
-		Debug.Log(dir);
 		rb.AddForce(dir * force);
-
+		GetComponent<Trails>().enabled = true;
 		//remove script (not game object)
 		Destroy(this);
 	}	
@@ -35,5 +35,6 @@ public class PullAndRelease : MonoBehaviour
 			dir = dir.normalized * radius;
 		}
 		transform.position = startPos + dir;
+		
 	}
 }
